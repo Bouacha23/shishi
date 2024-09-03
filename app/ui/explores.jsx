@@ -2,15 +2,15 @@
 
 function Explortwo() {
   return (
-    <div className="w-full bg-primary text-white py-4 lg:h-[95vh]  ">
-        <div className="contianer  h-full w-full  grid grid-cols-1 gap-8 lg:grid-cols-3 f">
+    <div className="w-full bg-primary text-white py-4    ">
+        <div className="contianer  h-full w-full gird lg:h-[95vh] overflow-hidden   ">
             <img className=" w-full h-[400px]   " src="plate1.avif" alt="" />
-            <div className="middle flex flex-col items-center  bg-secend h-fit p-8 border-2 border-third  rounded-tr-[130px] rounded-bl-[130px]  ">
+            <div className="middle my-4 sm:none  flex flex-col items-center  bg-secend h-fit p-8 border-2 border-third  rounded-tr-[130px] rounded-bl-[130px]  ">
                 <div className=" f flex-col my-2 ">
                     <img className="mb-4 w-[70px]" src="china.png" alt="logo" />
                     <h1 className=" text-white text-4xl uppercase "> book a table  </h1>
                 </div>
-                <form className="py-8 w-full lg:min-w-[350px] f flex-col gap-8" action="">
+                <form className="  py-8 w-full lg:min-w-[350px] f flex-col gap-8" action="">
                        
                 <select className=" outline-none  w-full bg-secend  uppercase  gap-2 border-b-2 border-third p-2" id="number-person" name="number-person" required>
         

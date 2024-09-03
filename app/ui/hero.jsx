@@ -44,8 +44,8 @@ function  Hero () {
             <div className="right relative  bg-gray-700 w-[100vw] h-[100vh] lg:w-full ">
                  <div className=" absolute top-0 left-0 w-full h-full  bg-black/20 z-[20]"></div>
                  <img  className=" absolute top-0 left-0 w-full h-full " src="hero.jpg" alt="righthero" />
-                 <FaChevronLeft onClick={ () => handelleft()} className="  z-[40] cursor-pointer absolute top-1/2 left-10 -translate-x-1/2 text-third" size={40}/> 
-                 <FaChevronLeft onClick={() => handelright()} className="  z-[40] cursor-pointer absolute top-1/2  rotate-180 right-10 -translate-x-1/2 text-third" size={40}/> 
+                 <FaChevronLeft onClick={ () => handelleft()} className=" hidden md:block  z-[40] cursor-pointer absolute top-1/2 left-10 -translate-x-1/2 text-third" size={40}/> 
+                 <FaChevronLeft onClick={() => handelright()} className=" hidden md:block z-[40] cursor-pointer absolute top-1/2  rotate-180 right-10 -translate-x-1/2 text-third" size={40}/> 
                  <div className="show min-h[80%]  flex flex-col items-center gap-8 text-center z-[30] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div className="top  w-[410px]  overflow-hidden py-8  ">
                             <ul  style={{ transform: `translateX(-${ number*34}%)` }} className={`    w-[1200px] gap-12  grid grid-cols-3 transition-all duration-700 ` }>

@@ -11,10 +11,10 @@ function Header() {
               <h2 className="logo font-bold text-3xl">
               实
               </h2>
-              <h1 className=" text-2xl capitalize font-light  ">sushi</h1>
+              <h1 className=" text-2xl capitalize font-mono  ">sushi</h1>
           </div>
           <div className=" cursor-pointer right">
-              <p className=" hidden">menu</p>
+              <p className=" hidden lg:block">menu</p>
               <div className="icons flex gap-[5px] flex-col justify-end">
                   <div className=" bg-third w-[60px] h-[2px]"></div>
                   <div className=" ml-[20px] bg-third w-[40px] h-[2px]"></div>

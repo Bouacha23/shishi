@@ -41,3 +41,10 @@
 .bordersketeton {
   @apply absolute    border-third border-2 rounded-tr-[130px] rounded-bl-[130px]  -top-4 -right-2  -z-10
 }
+
+.cart:hover .cartline {
+  transform: translateX(130px);
+}
+.cart:hover .cartlinet {
+  transform: translateX(0px);
+}

@@ -13,8 +13,8 @@ function Header() {
               </h2>
               <h1 className=" text-2xl capitalize font-mono  ">sushi</h1>
           </div>
-          <div className=" cursor-pointer right">
-              <p className=" hidden lg:block">menu</p>
+          <div className=" cursor-pointer right lg:flex  items-center  gap-8">
+              <p className=" hidden lg:block text-white uppercase">menu</p>
               <div className="icons flex gap-[5px] flex-col justify-end">
                   <div className=" bg-third w-[60px] h-[2px]"></div>
                   <div className=" ml-[20px] bg-third w-[40px] h-[2px]"></div>

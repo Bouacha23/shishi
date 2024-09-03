@@ -2,10 +2,10 @@
 
 function Explortwo() {
   return (
-    <div className="w-full bg-primary text-white py-4    ">
-        <div className="contianer  h-full w-full gird lg:h-[95vh] overflow-hidden   ">
-            <img className=" w-full h-[400px]   " src="plate1.avif" alt="" />
-            <div className="middle my-4 sm:none  flex flex-col items-center  bg-secend h-fit p-8 border-2 border-third  rounded-tr-[130px] rounded-bl-[130px]  ">
+    <div className="w-full bg-primary text-white pt-24   ">
+        <div className="contianer overflow-hidden  grid   md:grid-cols-2 gap-8 lg:grid-cols-3 ">
+            <img className=" w-full h-[400px] md:h-full  object-cover    " src="plate1.avif" alt="" />
+            <div className="middle my-4 md:my-0 sm:none  flex flex-col items-center  bg-secend h-fit p-8 border-2 border-third  rounded-tr-[130px] rounded-bl-[130px]  ">
                 <div className=" f flex-col my-2 ">
                     <img className="mb-4 w-[70px]" src="china.png" alt="logo" />
                     <h1 className=" text-white text-4xl uppercase "> book a table  </h1>
@@ -44,7 +44,7 @@ function Explortwo() {
                         <h4 className=" text-white/40"> *reservations recommended </h4>
                 </form>
             </div>
-            <img  className=" w-full h-[400px]  "src="plate2.avif" alt="" />
+            <img  className=" w-full h-[400px] lg:h-full  md:col-span-2 lg:col-span-1 object-cover "src="plate2.avif" alt="" />
         </div>
     </div>
   )

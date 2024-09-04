@@ -10,9 +10,11 @@ import Rolls from "./ui/rolls";
 import Vidio from "./ui/vidido"
 import Footer from "./ui/footer"
 import About from "./ui/about"
+import Pop from "./ui/pop"
 export default function Home() {
   return (
     <main className="w-full ">
+          <Pop />
           <Header />
           <Hero/>
           <Explore /> 

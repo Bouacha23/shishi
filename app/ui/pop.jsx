@@ -10,7 +10,7 @@ function Pop() {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Delay for animation to start after page load
+    }, 30); // Delay for animation to start after page load
   }, []);
 
   const techIcons = [
@@ -25,20 +25,21 @@ function Pop() {
     return null 
   }
   return (
-<div className={` transition-all duration-200 w-[90%] h-fit rounded-[30px]  border-third  border-2 absolute z-[100]  bg-primary  top-1/2  left-1/2  -translate-y-1/2 -translate-x-1/2  ${isVisible ? 'scale-100 opacity-100' : 'scale-50 opacity-0'} `}>
-        <div className=" container w-full h-full  relative p-12  grid  gap-2 grid-cols-2 ">
+<div className={` transition-all duration-200 m-auto w-[90%] h-[90%] md:w-[80%] lg:h-fit lg:w-[900px] rounded-[30px]  border-third  border-2 absolute z-[100]  bg-primary  lg:bg-secend top-1/2  left-1/2  -translate-y-1/2 -translate-x-1/2  ${isVisible ? 'scale-100 opacity-100' : 'scale-50 opacity-0'} `}>
+        <div className=" container p-8 lg:p-12 w-full h-full  relative grid grid-cols-1 lg:gird-cols-2  lg:gap-12   ">
             <CiCircleRemove onClick={ () =>  setShow(false)}   className=" cursor-pointer hover:text-white absolute top-4 right-4  text-third" size={30} /> 
             
-            <h1 className=" col-span-2 text-4xl text-white  uppercase  font-light">shish stor</h1>
-            <p className=" text-white/50 capitalize  py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint nobis autem dolore ipsam necessitatibus ex temporibus magnam ducimus voluptatem libero perferendis eius, officia placeat, corporis nemo. Exercitationem, aliquid saepe?</p>
-               
-            
-            <img  className=" w-full object-cover rounded-xl  "src="chef.avif" alt="" />
-            <ul className=" flex gap-4 items-center justify-center col-span-2  ">
+            <h1 className=" lg:col-span-2 text-4xl text-white  uppercase w-full  text-center lg:text-left font-light">shish stor</h1>
+            <div className=" text-white/50 text-center lg:w-[400px] gap-4  h-[230px] capitalize  py-4 flex flex-col justify-center lg:justify-normal lg:p-0 lg:text-left">This project is for Shishi Shop, which offers a wide variety of products. We designed a landing page to showcase the products and allow customers to book a table.
+            <ul className=" flex gap-4 items-center  justify-center lg:justify-normal  ">
                   { techIcons.map(
                     item => item.icon
                   )}
-                </ul>
+            </ul></div>
+               
+            
+            <img  className=" w-full  lg:block h-[300px]  lg:w-[400px] lg:h-[230px] object-cover rounded-xl  "src="chef.avif" alt="" />
+           
         </div>
     </div>
   )
